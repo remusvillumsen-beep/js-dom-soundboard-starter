@@ -1,0 +1,43 @@
+/* Centrér hele indholdet på siden */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    /* Skriv selv: brug CSS Flexbox til at placere <h1> og knap-sektionen under hinanden,
+       centreret i forhold til hinanden. Denne gang skal elementerne stå i en kolonne, ikke en række -
+       husk at flex-direction bestemmer, om elementerne står i en række eller en kolonne. */
+
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.sound-buttons {
+    /* Skriv selv: brug CSS Flexbox til at centrere de fire knapper i denne container.
+       Husk fra dag 4: du skal bruge display: flex, samt justify-content og align-items,
+       for at centrere knapperne både vandret og lodret i forhold til hinanden. */
+
+
+}
+
+button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
