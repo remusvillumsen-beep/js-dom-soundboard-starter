@@ -1,8 +1,11 @@
+"use strict";
+
 // Husk fra dag 1: skriv "use strict" herunder
 
 
 // Skriv selv: hent lion-knappen ved hjælp af dens id. Variablen skal hedde getLionBtn
-
+const getLionBtn = document.getElementById (`lion`);
+// kan bruge document.querySelector hvis det er class eller html tag man vil fange.
 
 // Nyt i dag: new Audio() opretter et lyd-objekt. src angiver, hvilken lydfil objektet skal afspille.
 const soundLion = new Audio();
@@ -20,6 +23,15 @@ getLionBtn.addEventListener("click", () => {
 // 2. Opret et Audio-objekt til dog-lyden ("sound/dog.wav"). Variablen skal hedde soundDog
 // 3. Tilføj en event listener til getDogBtn, der stopper alle lyde og afspiller soundDog
 
+const getDogBtn= document.getElementById (`dog`);
+
+const soundDog = new Audio ();
+soundDog.src = "sound/dog.wav";
+
+getDogBtn.addEventListener ("click", () => {
+    stopAllSounds();
+    soundDog.play();
+});
 
 /* =========================================================
    EKSTRAOPGAVE: elephant og monkey
@@ -31,6 +43,26 @@ getLionBtn.addEventListener("click", () => {
 // 1. Hent elephant-knappen ved hjælp af dens id. Variablen skal hedde getElephantBtn
 // 2. Opret et Audio-objekt til elephant-lyden ("sound/elephant.wav"). Variablen skal hedde soundElephant
 // 3. Tilføj en event listener til getElephantBtn, der stopper alle lyde og afspiller soundElephant
+
+const getElephantBtn= document.getElementById (`elephant`);
+
+const soundElephant = new Audio ();
+soundElephant.src = "sound/elephant.wav";
+
+getElephantBtn.addEventListener ("click", () => {
+    stopAllSounds();
+    soundElephant.play();
+});
+
+const getMonkeyBtn= document.getElementById (`monkey`);
+
+const soundMonkey = new Audio ();
+soundMonkey.src = "sound/monkey.wav";
+
+getMonkeyBtn.addEventListener ("click", () => {
+    stopAllSounds();
+    soundMonkey.play();
+});
 
 
 // E4. Monkey

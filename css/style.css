@@ -20,11 +20,12 @@ body {
 }
 
 .sound-buttons {
+    direction: flex;
+    align-items: center;
+    justify-content: center;
     /* Skriv selv: brug CSS Flexbox til at centrere de fire knapper i denne container.
        Husk fra dag 4: du skal bruge display: flex, samt justify-content og align-items,
        for at centrere knapperne både vandret og lodret i forhold til hinanden. */
-
-
 }
 
 button {
